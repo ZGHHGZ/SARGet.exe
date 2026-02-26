@@ -70,8 +70,8 @@ Efficient SAR Data Download Tool（SAR数据高效下载工具）
 
 下载界面如图5所示，柱状图显示为各相邻影像的时间间隔。“文件并行数”表示并行下载的文件数；“分块并行数”表示单个文件内部的并行下载数。图5所显示的总并行数为8×32。单击“开始下载”，即可进行下载。
 
-<img width="701" height="408" alt="image" src="https://github.com/user-attachments/assets/9c7e7474-a2a2-406c-b0fe-62479854e67d" 
-  />
+<img width="701" height="408" alt="image" src="https://github.com/user-attachments/assets/9c7e7474-a2a2-406c-b0fe-62479854e67d" />
+
 图5 Sentinel-1下载界面
 
 单击开始下载后，软件弹出下载路径选择对话框，选择所需的下载路径后，软件自动进行数据下载，如图6所示。下载内容依次为SLC数据、轨道数据、DEM数据。
