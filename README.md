@@ -1,12 +1,9 @@
 # SARGet.exe
 Efficient SAR Data Download Tool（SAR数据高效下载工具）
 
-**SARGet**
-
-**软件使用说明书**
+**SARGet软件使用说明书**
 <img width="1015" height="570" alt="image" src="https://github.com/user-attachments/assets/46aab8fe-f6b7-4a90-ac40-8c0c88948abd" />
 
-**2026年2月26日**
 
 **前 言**
 
