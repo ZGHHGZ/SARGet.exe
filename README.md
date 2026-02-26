@@ -4,6 +4,7 @@ Efficient SAR Data Download Tool（SAR数据高效下载工具）
 **SARGet**
 
 **软件使用说明书**
+<img width="1015" height="570" alt="image" src="https://github.com/user-attachments/assets/46aab8fe-f6b7-4a90-ac40-8c0c88948abd" />
 
 **2026年2月26日**
 
@@ -40,6 +41,7 @@ Efficient SAR Data Download Tool（SAR数据高效下载工具）
 **2 软件安装**
 
 双击安装包，按照安装向导的指引，逐步执行默认操作（通常为连续点击“下一步”），直至安装过程结束，安装引导界面如图1所示。
+<img width="628" height="471" alt="image" src="https://github.com/user-attachments/assets/f39a39f3-8ba2-49ba-bfa3-a2ad6d32a1e4" />
 
 图1 软件安装界面
 
@@ -50,62 +52,56 @@ Efficient SAR Data Download Tool（SAR数据高效下载工具）
 **3.1 Sentinel-1数据下载**
 
 软件初始界面为Sentinel-1数据下载界面。输入研究区域的中心经纬度后，即可进行数据搜索，如图2所示。
-
+<img width="865" height="615" alt="image" src="https://github.com/user-attachments/assets/c231054c-1384-4bd8-add1-13e87fdeee21" />
 图2 Sentinel-1数据搜索
 
 单击“搜索”按钮后，软件开始搜索，并获取覆盖该位置的所有Burst数据，如图3所示。
 
 由于时序InSAR处理所需的影像需要在同一轨道下，需对检索到的数据进行分组后再进行下载。切换“全部影像”选项卡至“分组影像”选项卡即可查看分组后的影像，如图4所示。分组编号命名规则为“轨道号_Burst编号_条带号”。可通过修改“起始时间”和“结束时间”并单击“筛选”按钮来设定所需下载数据的时段。筛选完成后，即可单击“下载”进入下载界面。
-
+<img width="865" height="615" alt="image" src="https://github.com/user-attachments/assets/adaed818-abad-47a2-846f-0fb1918aed91" />
 图3 Sentinel-1搜索结果
-
+<img width="865" height="615" alt="image" src="https://github.com/user-attachments/assets/bdf39226-21c7-4274-8602-2b04e59e0c0f" />
 图4 Sentinel-1数据分组
 
 下载界面如图5所示，柱状图显示为各相邻影像的时间间隔。“文件并行数”表示并行下载的文件数；“分块并行数”表示单个文件内部的并行下载数。图5所显示的总并行数为8×32。单击“开始下载”，即可进行下载。
-
+<img width="701" height="408" alt="image" src="https://github.com/user-attachments/assets/9c7e7474-a2a2-406c-b0fe-62479854e67d" />
 图5 Sentinel-1下载界面
 
 单击开始下载后，软件弹出下载路径选择对话框，选择所需的下载路径后，软件自动进行数据下载，如图6所示。下载内容依次为SLC数据、轨道数据、DEM数据。
-
+<img width="746" height="510" alt="image" src="https://github.com/user-attachments/assets/4430f882-15cf-4937-a5bb-2f138885c0e7" />
 图6 Sentinel-1下载进度
 
 当图6界面显示“所有数据下载已完成”时，标志下载任务结束。
-
 该下载程序所下载的数据依次位于各子文件夹内，slc文件夹内为VV极化的Sentinel-1影像数据（Burst），orbits文件夹内为轨道数据，dem文件夹内为DEM数据。
-
-若下载任务中断，后续可通过单击软件主界面右上角处的“导入“按钮以选择历史下载路径，软件会自动下载剩余未下载的数据（软件会自动跳过已下载完成的SLC影像数据，但会重新覆盖下载轨道及dem数据。）。
-
-图6 Sentinel-1历史下载路径导入
+若下载任务中断，后续可通过单击软件主界面右上角处的“导入“按钮以选择历史下载路径，软件会自动下载剩余未下载的数据（软件会自动跳过已下载完成的SLC影像数据，但会重新覆盖下载轨道及dem数据。），如图7所示。
+<img width="376" height="274" alt="image" src="https://github.com/user-attachments/assets/267379d0-61c8-431b-9e06-fc0f8dbbdaaa" />
+图7 Sentinel-1历史下载路径导入
 
 **3.2 NISAR数据下载**
 
-在软件主界面中，将“Sentinel-1”选项卡切换至“NISAR”选项卡，即可进行NISAR数据的搜索与下载，数据搜索方式与Sentinel-1一致，如图7所示。
+在软件主界面中，将“Sentinel-1”选项卡切换至“NISAR”选项卡，即可进行NISAR数据的搜索与下载，数据搜索方式与Sentinel-1一致，如图8所示。
+<img width="865" height="615" alt="image" src="https://github.com/user-attachments/assets/9db5175f-1895-4366-be51-3e59362f6a3b" />
+图8 NISAR数据搜索
 
-图7 NISAR数据搜索
+软件对NISAR数据按轨道编号进行分组，如图9所示。后续操作与Sentinel-1一致。单击“下载”即可进入下载界面。
+<img width="865" height="615" alt="image" src="https://github.com/user-attachments/assets/bcbf462a-6163-4e5c-8f5e-59253d6b1f84" />
+图9 NISAR数据分组
 
-软件对NISAR数据按轨道编号进行分组，如图8所示。后续操作与Sentinel-1一致。单击“下载”即可进入下载界面。
-
-图8 NISAR数据分组
-
-下载界面如图9所示，地图中绿色区域为所有影像公共区域，红色区域为待裁剪区域。用户可自定义经纬度起止值来改变裁剪范围。
-
+下载界面如图10所示，地图中绿色区域为所有影像公共区域，红色区域为待裁剪区域。用户可自定义经纬度起止值来改变裁剪范围。
 右侧表格中的“研究区覆盖率”用于表征影像的有效覆盖程度，其值为影像可用数据区域与用户设定的待裁剪范围面积的百分比。
+<img width="723" height="435" alt="image" src="https://github.com/user-attachments/assets/58c636e0-a192-41b6-a386-b48965b7ba9a" />
+图10 NISAR数据下载界面
 
-图9 NISAR数据下载界面
-
-单击图9中的“开始下载”按钮即可进行NISAR数据下载。下载内容依次为RSLC数据、DEM数据。所下载RSLC数据为频率A及频率B的HH极化数据。
-
+单击图10中的“开始下载”按钮即可进行NISAR数据下载。下载内容依次为RSLC数据、DEM数据。所下载RSLC数据为频率A及频率B的HH极化数据。
 下载流程与Sentinel-1操作流程基本一致。任务中断后的重新“导入”下载会跳过已下载的RSLC文件，但会重新覆盖下载DEM数据。
 
 **4 相关问题**
 
 若出现地图无法加载、数据无法搜索等现象，可尝试关闭系统防火墙及第三方杀毒软件，或尝试切换网络。
-
 由于该软件下载的Sentinel-1数据为单Burst数据，数据处理时无需对相邻Burst进行拼接，而ISCE、GAMMA、SNAP等软件的常规处理流程中会有相邻Burst拼接的步骤。因此，在处理前可能需要修改相应软件的处理流程，以避免处理出错。基于ISCE软件的单Burst处理可参考https://github.com/ZGHHGZ/ML-TS-InSAR。
-
-若存在关于SARGet软件的其它问题，可加入图10中的QQ群聊进行咨询，或将问题发送至邮箱：[2336164866@qq.com](mailto:2336164866@qq.com)。
-
-图10 QQ群聊
+若存在关于SARGet软件的其它问题，可加入图11中的QQ群聊进行咨询，或将问题发送至邮箱：[2336164866@qq.com](mailto:2336164866@qq.com)。
+<img width="370" height="460" alt="image" src="https://github.com/user-attachments/assets/9c663aca-efb3-44d1-8115-e81ae87f012f" />
+图11 QQ群聊
 
 
 
