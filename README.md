@@ -28,8 +28,8 @@ Efficient SAR Data Download Tool（SAR数据高效下载工具）
 
 表1 软件下载途径
 
-| **| ** |
 | **下载来源** | **下载链接** |
+| ----- | ----- |
 | **GitHub** | [**https://github.com/ZGHHGZ/SARGet.exe/releases**](https://github.com/ZGHHGZ/SARGet.exe/releases) |
 | **百度网盘** | [**https://pan.baidu.com/s/1_hH2_eZr8Y5nMFq0ZPKGIQ?pwd=9999**](https://pan.baidu.com/s/1_hH2_eZr8Y5nMFq0ZPKGIQ?pwd=9999) |
 
