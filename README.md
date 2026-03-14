@@ -114,7 +114,7 @@ Efficient SAR Data Download Tool（SAR数据高效下载工具）
 **4 相关问题**
 
 若出现地图无法加载、数据无法搜索等现象，可尝试关闭系统防火墙及第三方杀毒软件，或尝试切换网络。
-由于该软件下载的Sentinel-1数据为单Burst数据，数据处理时无需对相邻Burst进行拼接，而ISCE、GAMMA、SNAP等软件的常规处理流程中会有相邻Burst拼接的步骤。因此，在处理前可能需要修改相应软件的处理流程，以避免处理出错。基于ISCE软件的单Burst处理可参考https://github.com/ZGHHGZ/ML-TS-InSAR。
+由于该软件下载的Sentinel-1数据为单Burst数据，数据处理时无需对相邻Burst进行拼接，而ISCE、GAMMA、SNAP等软件的常规处理流程中会有相邻Burst拼接的步骤。因此，在处理前可能需要修改相应软件的处理流程，以避免处理出错。基于ISCE软件的单Burst处理可参考https://github.com/ZGHHGZ/ML-TS-InSAR
 若存在关于SARGet软件的其它问题，可加入图11中的QQ群聊进行咨询，或将问题发送至邮箱：[2336164866@qq.com](mailto:2336164866@qq.com)。
 
 <img width="370" height="460" alt="image" src="https://github.com/user-attachments/assets/9c663aca-efb3-44d1-8115-e81ae87f012f" />
