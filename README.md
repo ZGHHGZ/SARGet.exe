@@ -80,7 +80,9 @@ Efficient SAR Data Download Tool（SAR数据高效下载工具）
 图6 Sentinel-1下载进度
 
 当图6界面显示“所有数据下载已完成”时，标志下载任务结束。
+
 该下载程序所下载的数据依次位于各子文件夹内，slc文件夹内为VV极化的Sentinel-1影像数据（Burst），orbits文件夹内为轨道数据，dem文件夹内为DEM数据。
+
 若下载任务中断，后续可通过单击软件主界面右上角处的“导入“按钮以选择历史下载路径，软件会自动下载剩余未下载的数据（软件会自动跳过已下载完成的SLC影像数据，但会重新覆盖下载轨道及dem数据。），如图7所示。
 
 <img width="376" height="274" alt="image" src="https://github.com/user-attachments/assets/267379d0-61c8-431b-9e06-fc0f8dbbdaaa" />
@@ -102,6 +104,7 @@ Efficient SAR Data Download Tool（SAR数据高效下载工具）
 图9 NISAR数据分组
 
 下载界面如图10所示，地图中绿色区域为所有影像公共区域，红色区域为待裁剪区域。用户可自定义经纬度起止值来改变裁剪范围。
+
 右侧表格中的“研究区覆盖率”用于表征影像的有效覆盖程度，其值为影像可用数据区域与用户设定的待裁剪范围面积的百分比。
 
 <img width="723" height="435" alt="image" src="https://github.com/user-attachments/assets/58c636e0-a192-41b6-a386-b48965b7ba9a" />
@@ -109,6 +112,7 @@ Efficient SAR Data Download Tool（SAR数据高效下载工具）
 图10 NISAR数据下载界面
 
 单击图10中的“开始下载”按钮即可进行NISAR数据下载。下载内容依次为RSLC数据、DEM数据。所下载RSLC数据为频率A及频率B的HH极化数据。
+
 下载流程与Sentinel-1操作流程基本一致。任务中断后的重新“导入”下载会跳过已下载的RSLC文件，但会重新覆盖下载DEM数据。
 
 **4 相关问题**
@@ -117,7 +121,7 @@ Efficient SAR Data Download Tool（SAR数据高效下载工具）
 
 由于该软件下载的Sentinel-1数据为单Burst数据，数据处理时无需对相邻Burst进行拼接，而ISCE、GAMMA、SNAP等软件的常规处理流程中会有相邻Burst拼接的步骤。因此，在处理前可能需要修改相应软件的处理流程，以避免处理出错。基于ISCE软件的单Burst处理可参考https://github.com/ZGHHGZ/ML-TS-InSAR
 
-若存在关于SARGet软件的其它问题，可加入图11中的QQ群聊进行咨询，或将问题发送至邮箱：[2336164866@qq.com](mailto:2336164866@qq.com)。
+若存在关于SARGet软件的其它问题，可加入图11中的QQ群聊进行咨询，或将问题发送至邮箱：[2336164866@qq.com](mailto:2336164866@qq.com)
 
 <img width="370" height="460" alt="image" src="https://github.com/user-attachments/assets/9c663aca-efb3-44d1-8115-e81ae87f012f" />
 
